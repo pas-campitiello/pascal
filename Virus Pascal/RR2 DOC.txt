@@ -1,0 +1,80 @@
+>>>> RR2 DOC (by Pasquale Campitiello) <<<<
+
+1) Si speficicano i parametri di allocazione delle memoria e le variabili.
+
+2) Si annulla il contenuto dei vettori "filexe" e "filecom"
+
+3) A "s" viene assegnato il nome di un file .COM.
+
+4) Viene cercato il primo file .EXE nella directory contenente il virus. Se non ci sono errori (cioè se DosError=0 e quindi esiste almeno un file .EXE nella directory), si entra in un ciclo Repeat che registra i nomi nei file .EXE trovati nelle varie celle del vettore "filexe".
+
+5) Stesso procedimento per i file .COM; i nomi sono registrati nel vettore "filecom".
+
+[N.d.A. Nell'originale RR2 il ciclo Repeat..Until, usato ai punti 4 e 5, era un ciclo While..Do. L'ho sostituito perchè si creava un errore nel riempimento del vettore relativo; col Repeat..Until, adesso, è anche un pò più leggibile].
+
+6) Tutti i nomi di file .EXE (registrati in "filexe") vengono rinominati come file .COM ad uno ad uno. 
+Ad ogni rinominazione, se il file rinominato .COM è uguale a un .COM "vero" (sono veri quelli registati in "filecom"), allora vorrà dire che è stato trovato (trovato:=1) un file .EXE con la stesso nome di un .COM.
+Se il file rinominato .COM, invece, non è uguale a nessuno dei .COM "veri", allora il nome di quest'ultimo verrà segnalato in "target" (in cui andrà "infetto", cioè il nome del file .EXE, rinominato .COM, comprensivo di estensione).
+
+[N.d.A. Praticamente con l'intero ciclo Repeat...Until si verificherà se esistono file .EXE col nome diverso da tutti i file .COM. Se ne esiste uno o più di uno, si segnerà il nome del primo trovato in "target" (con l'estensione .COM) e si uscirà da ciclo.
+Nel ciclo ho corretto un errore: nell'originale RR2, all'inizio del ciclo Repeat...Until mancava l'azzeramento di "k" e di "trovato".
+Se tutti i file .EXE hanno un nome uguale a tutti i file .COM, alla fine del ciclo la variabile "trovato" sarà uguale a 1 e "target" sarà vuota].
+
+7) Se il primo elemento di "filexe" è vuoto vuol dire che all'inizio non sono stati trovati file .EXE nella directory contenente il virus (al punto 4). Quindi "trovato" (che sarà sicuramente 0) verrà impostato a 1.
+
+8) Se dopo tutti i passaggi precedenti "trovato" è diverso da 1, significa che al punto 6 è stato trovato uno (o più) file .EXE col nome diverso da tutti i file .COM: se ne è stato trovato uno solo, il suo nome .COM è inserito in "target"; se ne sono stati trovati più di uno, invece, in "target" vi sarà il nome .COM del primo trovato.
+A questo punto (cioè se "trovato" è diverso da 1) il nome del file .COM in "target" verrà rinominato .EXE (come in origine) e inserito nella variabile "sano".
+
+9) Il file, il cui nome è inserito in "sano" (quindi il file .EXE originale), viene nascosto e aperto in lettura.
+Alla stringa "target", che contiene il nome del file .EXE originale ma rinominato a .COM, vengono aggiunti tanti spazi quanti ne risultano dall'operazione "12-lenght(target)". Per esempio, se "target" fosse uguale a "FILEBI.COM" la sua lunghezza sarebbe 10, allora verrebbero aggiunti 2 spazi (cioè 12-10) a "target", che risulterà "FILEBI.COM  ". 
+Se "target" fosse lungo 12 caratteri non verrebbe aggiunto alcuno spazio e resterebbe uguale. 
+Un file .COM "reale" lungo più di 12 caratteri non potrebbe esistere in quanto il massimo dei caratteri per il nome è 8 e l'estensione è sempre di 4 caratteri (.COM).
+
+10) A questo punto, un file viene creato e aperto in scrittura; al file viene impostato il nome registrato in "target" (cioè il .EXE originale, rinominato a .COM e comprensivo degli spazi finali aggiunti al punto 9). 
+Il file, il cui nome è stato inserito all'inizio nella variabile "s" (punto 3), viene aperto in lettura.
+
+11) Il ciclo Repeat..Until che segue copia il contenuto del file "s" nel file "target" (quello aperto in scrittura al punto 10). Finito il ciclo, il file "s" viene chiuso. 
+
+12) Si pone il puntatore del file "target" nel punto 321. Alla 321ª posizione di "target" si scriverà il nome di "target" (cioè il file .EXE originale, rinominato a .COM e comprensivo degli spazi finali aggiunti al punto 9). La scrittura di tale nome avviene con un ciclo FOR..TO..DO carattere per carattere perchè "target" è un file di char.
+Finito il ciclo, nella variabile "app" viene inserito il carattere ASCII 32, cioè il semplice spazio " ". Tale carattere viene scritto nel file "target" tante volte quante ne risultano dall'operazione "(11-lenght(sano))+1". Per es.: se la stringa "sano" (cioè il nome del file .EXE originale) è 7, il carattere " " della variabile "app", verrà inserito nel file "target" 5 volte (cioè 11-7+1).
+Dopo quest'ultima operazione il file "target" viene chiuso. Con esso di chiude tutto il BEGIN relativo alla condizione impostata al punto 8 (if trovato<>1);.
+
+13) A questo punto i codice originale era:
+ 
+ delete(s,(length(s)-2),3);
+ s:=s+'EXE';
+ SwapVectors;
+ Exec(s,'');
+ SwapVectors;
+
+Il nome del file .COM inserito in "s" (al punto 3) veniva rinominato a .EXE ed eseguito senza alcun comando specificato "Exec(s,'')".
+A mio avviso, queste righe sono inutili se non viene specificato un comando (e in questo caso si devono sapere i comandi di "s"), oppure senza che il file "s" possa eseguire qualcosa "da solo" senza comandi.
+Un'alternativa potrebbe essere la seguente:
+
+ SwapVectors;
+ Exec('c:\windows\command.com,'/c'+'RR2.EXE');
+ SwapVectors;
+
+Praticamente si riesegue il virus per una seconda volta (qui una struttura FOR..TO..DO o REPEAT..UNTIL creerebbe un bel "loop-tilt").
+
+L'alternativa che ho adottato nel programma invece è:
+ 
+ SwapVectors;
+ Exec(s,'');
+ SwapVectors;
+
+Praticamente si esegue il file .COM senza rinominarlo a .EXE.
+
+
+* * * CONCLUSIONI * * *
+Tra i molteplici obiettivi originali che si possono supporre, vi è quello che RaggedRobin intendesse colpire il file .COM che si inserisce all'inizio, ma il nome della variabile "target" (dall'ingl.: obiettivo) fa supporre che l'obiettivo sia il file .EXE.
+
+Comunque, al di là del file da colpire, credo che il virus abbia come "obiettivo generale" non quello di cancellare, ma quello di "scombussolare" la visione dei file all'utente-vittima e le mie modifiche portano proprio a questo.
+Infatti, l'utente-vittima si troverà:
+ - nella directory del virus un file .EXE invisibile o sfocato (cioè nascosto);
+ - un file in più col nome del .EXE di cui sopra, ma con estensione .COM, che contiene il    contenuto del file .COM inserito all'inizio; 
+ - un'esecuzione del file .COM inserito all'inizio.
+
+Insomma uno scambio di dati che crea un virus piuttosto disordinato da capire anche dalla parte del programmatore. Resta solo da stabilire il valore iniziale di "s", che il "propinatore del virus" dovrà scegliere in base alle sue aspettative, oppure dovrà fissarlo come costante.
+
+

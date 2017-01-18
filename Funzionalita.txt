@@ -1,0 +1,296 @@
+* * * * * * FUNZIONALITA' GENERALI DEI PROGRAMMI * * * * *
+
+-----------------------------------------------------------------------------------------------
+Per l'ottimale esecuzione dei programmi che trattano l'utilizzo di file, è opportuno modificare il percorso inserito nelle istruzioni ASSIGN e RENAME, in base alla posizione in cui voler salvare il proprio file.  
+Per l'ottimale utilizzo dei programmi che usano la libreria grafica (GRAPH), è opportuno modificare il percorso inserito nell'istruzione INITGRAPH, specificando la posizione esatta della cartella BGI sul proprio computer.
+-----------------------------------------------------------------------------------------------
+
+ A-B-C
+Alfabeta.pas: programma di ordinamento alfabetico di 2 stringhe inserite da tastiera.
+
+Allievi.pas: esempio di programma per un primo approccio ai vettori, con calcolo della media dei voti (inseriti da tastiera) di 3 alunni. 
+
+AmicFile.pas: semplice programma per la carica di un file.
+
+Arcob.pas: scritto in ambiente TURBO PASCAL 3.01, questo programma crea un effetto multicolore sullo sfondo e sul testo, per poi stampare i codici ASCII in ripetizione.
+
+AreaPeri.pas: semplice programma per il calcolo di area e perimetro di determinate figure; utilizzo delle procedure a livello elementare.
+
+Base: programma di Marco Mornati per la trasformazione di un numero in base 10 in un'altra base, compresa tra 2 e 16.
+
+BatNaval.pas: GIOCO DELLA BATTAGLIA NAVALE senza l'uso della libreria grafica, il tutto è gestito tramite le matrici e i vettori. Nel file zip è presente anche una breve documentazione del gioco.
+
+Bezier: le cosiddette "curve di Bézier", che si usano nella grafica computerizzata, sono calcolate con particolari metodi matematici e con l'utilizzo di pochi punti permettono di definire numerose forme. Il programma Bezier.pas è stato realizzato da Lord Cyrix per illustrare la formula di una curva Bezier che si muove fra 4 punti. Include anche alcune procedure in Assembler.
+
+Binario.pas: programma per la trasformazione binaria di un numero in base 10.
+
+BipBip.pas: esempio di carica e ricerca in un vettore numerico; al termine del programma l'altoparlante di sistema emette un suono.
+
+Braccio1 e Braccio2: questi due programmi (che non sono stati scritti dall'autore) simulano una sorta di braccio meccanico che si muove sullo schermo attraverso i comandi dati dalla tastiera (FrecciaSu, FrecciaGiù, FrecciaDx e FrecciaSx). In generale, un ottimo lavoro che illustra in modo abbastanza comprensibile l'uso della libreria grafica. 
+
+Calcolat.pas: programma che simula una calcolatrice.
+
+CalcolPI: programma molto interessante per il calcolo del PI greco (3,14...) con larga precisione. Inserendo in input il numero delle cifre decimali da calcolare, vengono contati anche i secondi (o decimi di secondo) per ultimare il calcolo. Il codice è stato fornito cortesemente da Jesper Wolf, l'autore originale è sconosciuto.  
+
+Calendar: scritto da Björn Hallström, questo programma stampa il calendario di un mese e di un anno inseriti in input (l'anno deve essere compreso tra il 1899 e il 2099). Il codice è ben organizzato e non molto complesso.
+
+Caratter: programma scritto da Marco Mornati. Permette la visualizzazione o la stampa della tabella ASCII, nonché la ricerca di un carattere partendo dal suo codice, e viceversa.
+
+Centra.pas: programma che data una stringa da tastiera la centra sullo schermo.
+
+Cittadin.pas: esempio di carica e ricerca in un array di record.
+
+Clienti.pas: esempio di programma con utilizzo di file organizzato ad indici (o indicizzato).
+
+CombDisp.pas: programma il calcolo combinatorio (disposizioni e combinazioni) e del fattoriale.
+
+Control.txt: non è un programma, ma è un file di testo che illustra l'utilizzo di alcune funzioni basilari del Pascal, come SQRT, ABS, FRAC ecc.
+
+CreaFile.pas: semplice programma per la creazione di un file.
+
+Crescent.pas: programma che ordina in modo crescente 4 numeri inseriti da tastiera.
+
+Crescen2.pas: programma che ordina in modo crescente 3 numeri inseriti da tastiera.
+
+Crono: semplice cronometro; eseguendo il programma, per iniziare il conteggio si preme il tasto "s", per fermarlo si ripreme "s". Al termine del conteggio vengono visualizzati i minuti, i secondi e i decimi di secondo cronometrati. Il programma è stato modificato dall'autore, l'originale è stato scritto da Marco Mornati.
+
+
+ D-E-F
+Diagonal.pas: inserito da tastiera il numero dei lati di un poligono, questo programma calcola il numero delle diagonali del poligono stesso.
+
+DiffDate.pas: programma che esegue il calcolo della differenza tra due date inserite da tastiera, con uso di una funzione.
+
+Differen.pas: elementare esempio di una differenza aritmetica.
+
+Diplomat.pas: programma che simula una sorta di query su un insieme di record per sapere quante delle persone inserite si sono diplomate dopo i 20 anni.
+
+Distanza.pas: dati due punti su un piano cartesiano e inserite le relative coordinate, il programma calcola la distanza fra i due punti tramite una funzione.
+
+Division.pas: elementare esempio di una divisione.
+
+DueCifre.pas: programma che estrae i numeri a 2 cifre da un vettore numerico.
+
+EquRetta.pas: programma per determinare l'equazione di una retta passante per 2 punti.
+
+Esadecim.pas: programma che trasforma un numero dal sistema decimale al sistema esadecimale.
+
+FatPrimi.pas: programma per dividere in fattori primi un numero fornito da tastiera.
+
+Fattoria.pas: primo esempio di calcolo del fattoriale di un numero inserito da tastiera.
+
+Fattori2.pas: secondo esempio di calcolo del fattoriale di un numero inserito da tastiera.
+
+Funz_Exp.pas: programma che illustra la funzionalità della funzione EXP(x).
+
+
+ G-H
+GesFile1.pas: semplice esempio per la gestione elementare di un file.
+
+GesFile2.pas: semplice esempio per la gestione elementare di un file.
+
+GesFile3.pas: primo esempio di programma per la gestione avanzata di un file.
+
+GesFile4.pas: secondo esempio di programma per la gestione avanzata di un file.
+
+Giorni.pas: inseriti da tastiera mese e giorno di una data, il programma calcola di che giorno cadrà la data se il primo giorno dell'anno (non bisestile) è lunedì.
+
+Grafica.pas: semplice programma per verificare le funzioni e procedure base della grafica in ambiente TURBO PASCAL 7.0.
+
+Griglia.pas: creato in ambiente TURBO PASCAL 6.0, questo programma stampa a video una griglia con l'uso della libreria grafica.
+
+Horner.pas: programma che trasforma un numero binario in decimale tramite l'algoritmo di Hörner.
+
+
+ I-J-K-L
+Indovina.pas: programma che esegue un semplice gioco: estratto a caso un numero compreso tra 0  e 100 l'utente ha 5 possibilità per indovinarlo.
+
+InteDec.pas: inserito un numero reale da tastiera, questo programma tramite una procedura che richiama 2 funzioni (INT e FRAC) restituisce la parte intera e la parte decimale.
+
+Intersez.pas: programma per determinare le coordinate del punto di intersezione di due rette nella forma Y=m1X+q1 e Y=m2X+q2.
+
+Inverti.pas: programma che illustra la funzione FOR...DOWNTO...DO.
+
+JeuFrase.pas: elementare gioco con l'utilizzo di un vettore di tipo CHAR.
+
+Kramer.pas: programma per la risoluzione di un sistema di equazioni tramite il metodo di Kramer.
+
+LegFile.pas: semplice programma per la lettura di un file; vedi SCRFILE.pas inserito in S-T.
+
+LeggPoes.pas: semplice programma per la lettura di un file; vedi POESIA.pas inserito in P-R.
+
+Logaritm.pas: programma per il calcolo di logaritmi naturali o in varie basi inserite da tastiera.
+
+
+ M
+Magazzin.pas: semplice programma per la gestione di un magazzino.
+
+Maggior2.pas: semplice esempio di utilizzo di una procedura, per verificare il più grande fra 2 numeri.
+
+Maggiore.pas: programma che ordina in modo crescente 2 numeri inseriti da tastiera con una procedure di scambio di variabile.
+
+MaggMino.pas: caricato un vettore numerico da tastiera, questo programma estrae e visualizza il numero maggiore e il numero minore.
+
+Matrice1.pas: programma esempio per l'utilizzo delle matrici.
+
+Matrice2.pas: programma esempio per l'utilizzo delle matrici.
+
+Matrice3.pas: programma esempio per l'utilizzo delle matrici.
+
+Matrice4.pas: programma esempio per l'utilizzo delle matrici.
+
+Matrice5.pas: programma esempio per l'utilizzo delle matrici.
+
+Matrix.pas: programma che simula l'effetto dei computer nel film MATRIX senza l'utilizzo della libreria grafica, ma con il solo uso della libreria CRT.
+
+Matrix2.pas: programma che simula l'effetto dei computer nel film MATRIX con l'utilizzo della libreria grafica GRAPH, in ambiente TURBO PASCAL 7.0.
+
+Mcd1.pas: programma che calcola il massimo comun divisore fra 2 numeri inseriti da tastiera.
+
+Mcd2.pas: programma che calcola il massimo comun divisore fra 2 numeri inseriti da tastiera.
+
+McdDi3Nu.pas: programma che calcola il massimo comun divisore fra 3 numeri inseriti da tastiera.
+
+MCLK: programma di David Daniel Anderson, rilasciato nel 1993; modificato varie volte da più collaboratori. MCLK è l'acronimo di Moving CLocK, infatti questo programma riproduce l'orologio di sistema che si muove velocemente sullo schermo e cambia colore ad ogni movimento. L'ora è rappresentata nel classico formato hh:mm:ss.
+
+MCM: programma per il calcolo del minimo comune multiplo.
+
+MDTuring.pas: programma che esegue la divisione di un numero per 2 secondo l'algoritmo della macchina di Turing.
+
+Media.pas: elementare esempio del calcolo di una media fra 3 numeri.
+
+MediaVet.pas: programma che calcola di media aritmetica degli elementi di un vettore inseriti da tastiera.
+
+Moto.pas: inserita la velocità costante di un mezzo (m/s), questo programma visualizza una tabella che mette in evidenza il moto del mezzo nel tempo.
+
+Mouse: programma che illustra il funzionamento di numerose procedure riguardanti l'utilizzo del mouse. Restituisce ad ogni movimento la posizione del mouse sullo schermo e il numero del tasto premuto (per esempio: riga 6 - colonna 11 - tasto 1; per dire che il mouse è in posizione 6,11 ed è premuto il tasto 1, cioè il tasto sinistro); per una migliore visualizzazione è preferibile eseguire il programma a schermo intero. Il codice è stato scritto da Timo Salmi.
+
+Multiplo.pas: programma che verifica se un numero inserito da tastiera è un multiplo di un altro.
+
+
+ N-O
+Nome.pas: elementare programma che inserito in una costante (a livello codice sorgente) un nome, lo circonda con una cornice di asterischi.
+
+Now: programma che restituisce la data e l'orario di sistema in diversi formati. Per eseguire il programma correttamente è preferibile creare un EXE dello stesso compilandolo sul disco e poi richiamarlo da modalità DOS. In questo modo sarà possibile visualizzare data e ora nei formati forniti (per es.: fornendo in modalità DOS il comando "Now /G" si ottiene la visualizzazione dell'ora tramite un orologio disegnato grazie alla libreria grafica, oppure col comando "Now /D" si visualizza solo la data di sistema; per visualizzare tutte le opzioni disponibili il comando è "Now /H"). In generale è un ottimo programma per imparare le funzioni grafiche basilari, nonché le funzioni relative a data e ora. L'autore è sconosciuto.
+
+NumeroMi.pas: caricato un vettore numerico da tastiera, questo programma estrae e visualizza il numero minore.
+
+NumPrimi: programma di Sam Hasinoff che cerca e conta i numeri primi presenti tra due estremi inseriti da tastiera. Per esempio inserendo come estremi 12 e 20 restituisce: "[13] [17] [19] - 3 numeri primi trovati".
+
+Ordarray.pas: programma per l'ordinamento (in senso crescente) degli elementi di un vettore.
+
+Ordinalf.pas: inseriti i nomi degli alunni di una classe questo programma li mette in ordine alfabetico; è un esempio di ordinamento di vettore.
+
+OrdPerso.pas: questo programma richiede il nome e l'età di 3 persone e poi ordina il tutto in base all'età e al nome; vengono usate procedure con passaggio di parametri.
+
+Ottario.pas: programma per la trasformazione di un numero decimale in un numero in base 8.
+
+
+ P-Q-R
+Parabola.pas: programma che disegna con asterischi la parabola di equazione X=Y².
+
+ParDis1.pas: elementare programma per verificare se un numero è pari o dispari.
+
+ParDis2.pas: caricato un array numerico questo programma restituisce i numeri pari e dispari.
+
+Password.pas: programma per la creazione di password casuali.
+
+Password2.pas: programma per la creazione di password casuali.
+
+Password3.pas: programma per la creazione di password casuali.
+
+Perpetuo: programma di Marco Mornati. Permette di calcolare il giorno della settimana corrispondente ad una data inserita da tastiera e, su richiesta, di stamparne il calendario del mese relativo, nell'anno relativo. Praticamente svolge la funzione di calendario perpetuo o quasi, perché le variabili hanno un limite.
+
+Persone.pas: semplice programma di carica e ricerca in un array di record.
+
+Pianeti: programma che simula graficamente il moto di rivoluzione della Terra intorno al Sole e della Luna intorno alla Terra, calcolando i giorni (il moto si avvia premendo la barra spaziatrice e si lo si interrompe premendo il tasto Pause). Eccellente programma per illustrare l'uso della libreria GRAPH. Autore sconosciuto.
+
+Piano: questo programma simula i suoni di un piano utilizzando l'altoparlante di sistema e la libreria grafica per disegnare i tasti. Il codice è ben organizzato e interessante per capire le procedure grafiche e di gestione dell'altoparlante di sistema. L'autore è il pluri-presente Marco Mornati.
+
+Pitagora.pas: programma che esegue le operazioni del teorema di Pitagora.
+
+Poesia.pas: semplice programma per la scrittura di un file; vedi LEGGPOES.pas inserito in I-J-K-L.
+
+Potenza.pas: programma per il calcolo di potenze.
+
+Potenza2.pas: programma per il calcolo di potenze.
+
+Potenza3.pas: programma per il calcolo di potenze.
+
+Potenza4.pas: programma per il calcolo di potenze.
+
+Primo.pas: inserito un numero da tastiera questo programma verifica se è un numero primo.
+
+PRODDIAG.PAS: programma per il calcolo del prodotto degli elementi della diagonale principale di una matrice.
+
+Prodotto.pas: semplice programma per eseguire un prodotto fra due numeri.
+
+ProdMatr.PAS: programma per il calcolo del prodotto di 2 matrici numeriche (ordine massimo 5).
+
+Radici.pas: programma per il calcolo di radici in vari indici.
+
+Registro.pas: programma che simula, mediante l'uso dei vettori, un registro di classe.
+
+RicBinar.pas: caricato un vettore numerico, questo programma esegue la ricerca binaria.
+
+Ricerca.pas: semplice ricerca di un elemento in un vettore.
+
+Riduzion.pas: programma per la semplificazione di frazioni.
+
+Rigori.pas: semplice gioco del calcio di rigore, realizzato con un ciclo e la funzione RANDOM.
+
+
+ S-T-U-V-W-X-Y-Z
+ScrFile.pas: semplice programma per la scrittura di un file; vedi LEGFILE.pas inserito in I-J-K-L.
+
+Scritte: questo programma permette la realizzazione di un testo scorrevole. Dopo l'inserimento di vari dati parametrici, fra i quali anche la scritta e la velocità di scorrimento, il programma restituisce una sorta di barra (in base ai parametri impostati) con il testo scorrevole. Realizzazione di Marco Mornati.
+
+Sfondo: semplice programma per verificare i possibili sfondi di una stringa.
+
+SommaMat.pas: programma che esegue la somma di 2 matrici numeriche (ordine massimo 3).
+
+SomVetto.pas: programma che esegue la somma di 2 vettori numerici.
+
+Somma.pas: semplice programma per eseguire una somma aritmetica.
+
+SommaNum.pas: semplice programma che esegue la somma dei primi 5 numeri con un ciclo FOR.
+
+Specchio.pas: utilizzando una procedura, questo programma restituisce una stringa al contrario (la stringa è inserita da tastiera carattere per carattere).
+
+Stream16: piccola demo che mostra il funzionamento delle procedure basilari appartenenti alle librerie Objects, Drivers, Views, Menus, Dialogs e App. Crea un finestra con due brevi menu "File" e "Window" con funzioni minime. Autore sconosciuto.
+
+Suono.pas: semplice programma che verifica il funzionamento della procedura SOUND, facendo suonare l'altoparlante di sistema.
+
+TabASCII.pas: programma che stampa la tabella ASCII con un ciclo.
+
+Tabellin.pas: semplice programma per la stampa dei primi 10 multipli di un numero.
+
+Tabelli2.pas: semplice programma per la stampa dei primi 10 multipli di un numero.
+
+Tavola.pas: programma che stampa a video la tavola pitagorica.
+
+Telex.pas: programma che simula una scrittura lenta a video (la velocità è da impostare).
+
+Tempo: semplice programma realizzato da Afshin Zavar Kabeh, che visualizza l'orario di sistema nel formato "HH:MM:SS:S100", dove "S100 " sono i centesimi di secondo.
+
+Traduci.pas: semplice programma che mette in relazione 2 vettori.
+
+Trapezio.pas: semplice programma per il calcolo dell'area di un trapezio.
+
+Trapezi2.pas: semplice programma per il calcolo dell'area di un trapezio.
+
+Traspost.pas: programma per la visualizzazione della matrice trasposta da una matrice data.
+
+Triangol.pas: programma per verificare se un triangolo è equilatero, isoscele o scaleno.
+
+Tris3d2: programma scritto da Marco Mornati. Permette di giocare a TRIS con un altro utente in un ambiente grafico 3D. La struttura del codice è abbastanza complessa, ma potrebbe risultare molto interessante per l'utilizzo della libreria grafica.
+
+WinZip: programma che mostra una tecnica di compressione di un vettore. Una volta eseguito, prima viene caricato un vettore di dimensioni casuali (tra 1 e 20) con numeri interi casuali; poi con un ciclo vengono cercati i numeri uguali consecutivi e ne viene registrata la frequenza. Il programma è stato realizzato da Marco Mornati.
+Es.: vettore iniziale= 11 - 32 - 32 - 45 - 98 - 78 - 78 - 78 - 3 - 9; il risultato restituito dopo l'elaborazione sarà (vettore/frequenza)= 11/1 - 32/2- 45/1 - 98/1 - 78/3 - 3/1 - 9/1. 
+-----------------------------------------------------------------------------------------------
+
+© Pasquale Campitiello 14/07/2002
+***********************************************************************************************
+                     __  __  __  __  __     ___  __  __   ___
+\ \/ /\ \/ /\ \/ /  |__||__||__ |   |__||    |  |  ||  | | |
+ \/\/  \/\/  \/\/ . |   |  | __||__ |  ||__. |  |__||__|.| |  W W W . P A S C A L . T O O . I T
+***********************************************************************************************

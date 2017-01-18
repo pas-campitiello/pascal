@@ -1,0 +1,12 @@
+               _____FUNZIONI BASILARI_____
+
+SQRT(x)  - Calcola la radice quadrata di x, (es. SQRT(81)=9)
+SQR(x)   - Calcola il quadrato di x, (es. SQR(4)=16)
+INT(x)   - Fornisce a parte intera di x, (es. INT(3.32)=3)
+TRUNC(x) - Tronca la parte decimale di x, (es. TRUNC(3.32)=3)
+FRAC(x)  - Fornisce la parte decimale di x, (es. FRAC(3.32)=0.32)
+ROUND(x) - Arrotonda il valore di x all'intero più vicino (es. ROUND(3.8)=4)
+ABS(x)   - Calcola il valore assoluto di x, (es. ABS(-10)=10)
+A MOD B  - Calcola il resto della divisione tra A e B, (es. 16 MOD 5=1)
+A DIV B  - Calcola la parte intera del quoziente di A diviso B, (es. 11 div 5=2)
+RANDOM(x)- Genera numeri a caso compresi fra 0 e x, (es. N:=RANDOM(50))

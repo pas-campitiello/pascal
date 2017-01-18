@@ -1,0 +1,20 @@
+***** Breve documentazione sulla BATTAGLIA NAVALE *****
+
+INIZIO. Eseguendo il programma comparirà la scritta SHIP BATTLE in rosso e la stringa "Inserire il nome del capitano che sfida capitan Computer:" in giallo. Dopo aver inserito il nome del capitano verranno casualmente disposte nei campi di battaglia (15X15), del Computer e dell'utente, 10 navette da un pezzo (n), 7 incrociatori da 2 pezzi (i) e 5 portaerei da 3 pezzi (p); questi sono i numeri delle navi per default, ma possono essere anche variati, modificando le costanti num_n, num_i, num_p e max per l'ordine della matrice del campo di battaglia. Ogni utente ha a disposizione 100 colpi.
+
+GIOCO. Premendo INVIO si inizia a giocare: l'utente spara per primo indicando la coordinata x e y del colpo e premendo INVIO; successivamente vengono visualizzati il risultato del colpo e il numero dei pezzi colpiti dall'utente. Premendo ancora INVIO il computer genera le coordinate casuali del suo colpo e vengono visualizzati le coordinate, il risultato del colpo e il numero dei pezzi colpiti da Capitan Computer; premendo ancora INVIO i comandi tornano all'utente e così via.
+
+CONCLUSIONE. Il gioco finisce quando uno dei due combattenti affonda tutte le navi nemiche (naturalmente prima del 100° colpo). In questo caso il gioco verrà interrotto e sarà subito visualizzato il nome del vincitore. 
+
+Oppure, il gioco finisce quando il computer e l'utente, giunti ai 100 colpi, non possono più sparare e allora verrà visualizzata questa scritta:
+
+Capitan X ha colpito le navi di Capitan Computer per N volte
+
+Capitan Computer ha colpito le navi di Capitan X per M volte.
+
+Si fa il confronto tra N e M e al successivo INVIO verrà visualizzato il nome vincitore.
+
+Se N è uguale a M verrà visualizzata la stringa "La battaglia non ha avuto nessun vincitore".
+
+BUON DIVERTIMENTO
+

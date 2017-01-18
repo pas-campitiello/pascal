@@ -1,0 +1,11 @@
+°°° RR1 DOC (by RaggedRobin) °°°
+
+Il virus rr1 e’ nella fattispecie un trojan horse scritto in pascal, un linguaggio facile e che spesso viene insegnato a scuola; rr1 e’ un trojan horse ma a differenza di molti altri non agisce subito ma aspetta che si riavvii il computer 5 volte.
+
+Il modo col quale renderlo operativo e’ semplice: per prima cosa e’ necessario modificare un file bat in un disketto (magari quello che installa un gioco), dal PROMPT DI DOS bisogna scrivere : EDIT seguito da uno spazio e dal nome del file bat, andare a capo, tenere premuto il tasto alt e scrivere dal tastierino numerico 255 quindi rilasciare alt, in questo modo avete inserito nel file bat il carattere ascii 255 che è invisibile.
+
+Quando compilate rr1 dovete rinominare, sempre da dos, il file con il carattere 255, dovete cioe’ scrivere ren rr1.exe (premete alt scrivete 255 da tastierino e lasciate alt).exe, cambiate gli attributi del file nascondendolo (con il comando dos "attrib +h nomefile" o con win, come preferite) e copiatelo in a.
+
+Una volta che verra’ lanciato il file bat che avete modificato il virus verra’ copiato in c:\windows, alla fine dell’autoexec.bat verrà aggiunto il carattere 255 in modo che ogni volta che si avvia il computer il file venga caricato in memoria e il contatore che si chiama group.txt e che si trova in c:\windows venga incrementato di uno.
+
+Quando il contatore arriva a cinque il primo carattere del command.com e dell’explorer.exe vengono incrementati di due, vengono quindi fatte tre domande e se si risponde bene vengono rimessi a posto i files. A causa delle sue caratteristiche questo virus viene difficilmente scovato da programmi anti-vir.
